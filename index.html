@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Handlebars + VK.API</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.js"></script>
+  <script src="https://vk.com/js/api/openapi.js?162" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper">
+  <button class="btn btn-success" id="button">Click me</button>
+  <div class="content">
+    <h3 class="header-info"></h3>
+  </div>
+  <script id="user-template" type="text/x-handlebars-template">
+    <div>
+      {{#each items}}
+      <div class="user-block">
+        <h4>{{first_name}} {{last_name}}</h4>
+        <img src="{{photo_100}}" alt="{{first_name}}">
+      </div>
+      {{/each}}
+    </div>
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>

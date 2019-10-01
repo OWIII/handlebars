@@ -1,0 +1,35 @@
+body {
+  font-size: 50px;
+}
+
+.wrapper {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn {
+  width: max-content;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.header-info {
+  margin-bottom: 50px;
+}
+
+img {
+  display: block;
+}
+
+.user-block {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
