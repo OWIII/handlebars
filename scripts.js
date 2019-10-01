@@ -3,7 +3,7 @@ let block = document.querySelector('.content');
 let headerInfo = document.querySelector('.header-info');
 
 VK.init({
-  apiId: 7154746
+  apiId: 7155193
 });
 
 function auth() {
